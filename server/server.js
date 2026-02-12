@@ -44,7 +44,7 @@ const server=http.createServer((req,res)=>{
     }
     else{
         res.statusCode=404;
-        res.end("Page not found");
+        res.end("Page not found, error");
     }
     res.end();
 })
