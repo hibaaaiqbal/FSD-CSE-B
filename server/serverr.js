@@ -34,6 +34,7 @@ const serverr=http.createServer((req,res)=>{
         })
     }
     else if(url=="/viewdata" && method=="GET"){
+        res.setHeader("Content-Type", "application/json")
         res.end(JSON.stringify(userdata));
     }
     else{
